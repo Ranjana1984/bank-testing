@@ -21,7 +21,7 @@ public class App
     {
     System.out.println("Script Started");	
        //initializing the web driver
-    //System.setProperty("webdriver.chrome.driver", "C:\\Users\\sairo\\Desktop\\DEvops\\Assignments\\chromedriver-win641\\chromedriver-win64\\chromedriver.exe");
+    //System.setProperty("webdriver.chrome.driver", "C:\\Users\\jivani\\Desktop\\DEvops\\Assignments\\chromedriver-win641\\chromedriver-win64\\chromedriver.exe");
     //setting properties
     WebDriverManager.chromedriver().setup();
     ChromeOptions chromeOptions = new ChromeOptions();
@@ -52,7 +52,7 @@ public class App
     System.out.println("test scripts are executed");
     TakesScreenshot scrShot = ((TakesScreenshot)driver);
     File srcFile = scrShot.getScreenshotAs(OutputType.FILE);
-    File destFile = new File("/home/ubuntu/Testss.jpg");
+    File destFile = new File("/home/ubuntu/reports/Testss.jpg");
     FileUtils.copyFile(srcFile, destFile);
     Thread.sleep(1000);
     System.out.println("ScreenShot Taken");
