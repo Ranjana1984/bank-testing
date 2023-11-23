@@ -26,8 +26,8 @@ public class App
     WebDriverManager.chromedriver().setup();
     ChromeOptions chromeOptions = new ChromeOptions();
 	 chromeOptions.addArguments("--headless");
-	 //chromeOptions.addArguments("--disable-gpu");
-	//chromeOptions.addArguments("--no-sandbox");
+	 chromeOptions.addArguments("--disable-gpu");
+	 chromeOptions.addArguments("--no-sandbox");
     //open url
     System.out.println("Driver opening up the url in browser");	
     WebDriver driver = new ChromeDriver(chromeOptions);
