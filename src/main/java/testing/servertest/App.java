@@ -62,10 +62,10 @@ public class App
     File srcFile = scrShot.getScreenshotAs(OutputType.FILE);
     
    // File destFile = new File("/Users/jivan/test-reports.jpg");
-    File destFile = new File("/var/lib/jenkins/workspace/insure-me-test-scripts/test-reports.jpg");
+    //File destFile = new File("/var/lib/jenkins/workspace/insure-me-test-scripts/test-reports.jpg");
     
     
-    FileUtils.copyFile(srcFile, destFile);
+    //FileUtils.copyFile(srcFile, destFile);
     
     Thread.sleep(1000);
     
