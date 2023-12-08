@@ -54,7 +54,7 @@
   </dependencies>
 
   <build>
-	  <finalName>insurancetesting</finalName>
+	  <finalName>financetesting</finalName>
 	  <plugins> 
     <plugin>
                <artifactId>maven-assembly-plugin</artifactId>
