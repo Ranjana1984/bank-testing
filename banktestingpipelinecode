@@ -1,0 +1,11 @@
+node {
+    stage('code checkout'){
+        git "https://github.com/Ranjana1984/bank-testing.git"
+    }
+    stage('build'){
+        sh "mvn clean package"
+    }
+    stage('running the tests'){
+        sh "java -jar /var/lib/jenkins/workspace/banktest-pipline/target/financetesting-jar-with-dependencies.jar"
+    }
+}
