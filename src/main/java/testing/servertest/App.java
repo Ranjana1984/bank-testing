@@ -23,11 +23,11 @@ public class App
     	{
     	    System.out.println("Script Started");	
     	       //initializing the web driver
-    	     System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+    	     //System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
     	    //setting properties
     	    WebDriverManager.chromedriver().setup();
     	    ChromeOptions chromeOptions = new ChromeOptions();
-    		 // chromeOptions.addArguments("--headless");
+    		  //chromeOptions.addArguments("--headless");
     		  //chromeOptions.addArguments("--disable-gpu");
     		 //chromeOptions.addArguments("--no-sandbox");
     	    //open url
@@ -49,13 +49,14 @@ public class App
     	    Thread.sleep(1000);
     	    driver.findElement(By.id("my-button")).click();
     	    Thread.sleep(1000);
-    	    String response = driver.findElement(By.id("response")).getText();
-    	    System.out.println(response);
+    	    String message = driver.findElement(By.id("message")).getText();
+    	    System.out.println(message);
     	    Thread.sleep(1000);
     	    System.out.println("test scripts are executed");
     	    TakesScreenshot scrShot = ((TakesScreenshot)driver);
     	    File srcFile = scrShot.getScreenshotAs(OutputType.FILE);
-    	    File destFile = new File("/var/lib/jenkins/workspace/capstone-project-test/Testss.jpg");
+    	    File destFile = new File("C:\\Users\\jivan\\eclipse-workspacenew\\servertest\\Testss.jpg");
+    	    //File destFile = new File("/var/lib/jenkins/workspace/capstone-project-test/Testss.jpg");
     	    FileUtils.copyFile(srcFile, destFile);
     	    Thread.sleep(1000);
     	    System.out.println("ScreenShot Taken");
