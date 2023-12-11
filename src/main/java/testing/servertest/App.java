@@ -55,8 +55,8 @@ public class App
     	    System.out.println("test scripts are executed");
     	    TakesScreenshot scrShot = ((TakesScreenshot)driver);
     	    File srcFile = scrShot.getScreenshotAs(OutputType.FILE);
-    	    File destFile = new File("C:\\Users\\jivan\\eclipse-workspacenew\\servertest\\Testss.jpg");
-    	    //File destFile = new File("/var/lib/jenkins/workspace/capstone-project-test/Testss.jpg");
+    	    //File destFile = new File("C:\\Users\\jivan\\eclipse-workspacenew\\servertest\\Testss.jpg");
+    	    File destFile = new File("/var/lib/jenkins/workspace/capstone-project-test/Testss.jpg");
     	    FileUtils.copyFile(srcFile, destFile);
     	    Thread.sleep(1000);
     	    System.out.println("ScreenShot Taken");
