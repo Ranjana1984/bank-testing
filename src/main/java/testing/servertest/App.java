@@ -33,8 +33,8 @@ public class App
     	    //open url
     	    System.out.println("Driver opening up the url in browser");	
     	    WebDriver driver = new ChromeDriver(chromeOptions);
-    	    //driver.get("http://3.101.107.156:8080/contact.html");	
-    	    driver.get("http://localhost:8081/contact.html");	
+    	    driver.get("http://54.241.138.172:8080/contact.html");	
+    	    //driver.get("http://localhost:8080/contact.html");	
     	    //invole implicit waits to load the page
     	    driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     	    System.out.println("Enter details in the form");
